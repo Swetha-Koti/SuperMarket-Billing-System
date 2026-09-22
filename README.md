@@ -1,111 +1,94 @@
-\# SuperMarket Billing System
+# SuperMarket Billing System
 
+A web-based SuperMarket Billing System developed using HTML, CSS, and JavaScript. The application allows users to browse grocery products, search for items, manage a shopping cart, complete checkout, select payment methods, and generate a printable bill.
 
+## Features
 
-A web-based supermarket billing system developed using HTML, CSS, and JavaScript.
+### 1. User Registration
+- Create a new customer account.
+- Collects name, email, phone number, and password.
+- Validates required registration fields.
+- Stores registration details using browser LocalStorage.
 
+### 2. User Login
+- Login using email and password.
+- Basic input validation.
+- Redirects the user to the supermarket home page after login.
 
+### 3. Product Browsing
+- Products are organized into different categories.
+- Users can browse grocery items and view their prices.
+- Product cards display product images, names, prices, and an Add to Cart button.
 
-\## Features
+### 4. Product Search
+- Search products using the search bar.
+- Search by product name or category.
+- Matching products are displayed dynamically.
 
+### 5. Voice-Based Search
+- Supports voice-based product searching.
+- Uses the Web Speech API.
+- Users can speak a product or category instead of typing it.
 
+### 6. Shopping Cart
+- Add products to the shopping cart.
+- View selected products through the cart popup.
+- Remove products from the cart.
+- Automatically calculates the subtotal.
+- Adds the delivery fee to calculate the total amount.
 
-\- User Registration
+### 7. Checkout and Billing
+- Displays an order summary before placing the order.
+- Collects customer delivery information.
+- Validates customer details.
+- Calculates the final bill automatically.
 
-\- User Login
+### 8. Payment Options
+The checkout system provides multiple payment methods:
 
-\- Product Browsing
+- Credit Card
+- Debit Card
+- UPI
+- Cash on Delivery
 
-\- Product Search
+Credit/Debit Card and UPI details are displayed according to the selected payment method.
 
-\- Voice-Based Product Search
+### 9. Voice-Based Payment Selection
+- Users can select the payment method using voice commands.
+- Supports commands such as Credit Card, Debit Card, UPI, and Cash.
 
-\- Add to Cart
+### 10. Bill Generation
+- Generates an order receipt after placing an order.
+- Displays:
+  - Order ID
+  - Date and time
+  - Customer information
+  - Ordered products
+  - Quantity
+  - Price
+  - Subtotal
+  - Delivery fee
+  - Total amount
+  - Payment method
+- Provides an option to print the receipt.
 
-\- Remove Items from Cart
+### 11. Local Storage
+- Stores cart information using browser LocalStorage.
+- Preserves cart items while navigating between pages.
+- Stores user registration information locally.
 
-\- Cart Total Calculation
+---
 
-\- Checkout System
+## Technologies Used
 
-\- Multiple Payment Options
+| Technology | Purpose |
+|------------|---------|
+| HTML5 | Structure of web pages |
+| CSS3 | Styling and responsive user interface |
+| JavaScript | Application functionality and interaction |
+| LocalStorage | Client-side data storage |
+| Web Speech API | Voice search and voice-based payment selection |
+| Font Awesome | Icons and visual elements |
 
-\- Customer Information Validation
-
-\- Automatic Bill Calculation
-
-\- Printable Order Receipt
-
-\- Local Storage for Cart Data
-
-
-
-\## Technologies Used
-
-
-
-\- HTML5
-
-\- CSS3
-
-\- JavaScript
-
-\- LocalStorage
-
-\- Web Speech API
-
-\- Font Awesome
-
-
-
-\## Project Structure
-
-
-
-```text
-
-SuperMarket-Billing-System/
-
-│
-
-├── home.html
-
-├── checkout.html
-
-├── login.html
-
-├── signup.html
-
-├── script.js
-
-├── checkout.js
-
-├── styles.css
-
-└── images/
-
-Main Functionalities
-Product Management
-
-Users can browse products according to categories and add products to their shopping cart.
-
-Search
-
-Users can search for products using the search bar or voice search.
-
-Shopping Cart
-
-The system allows users to add and remove products and automatically calculates the subtotal and total amount.
-
-Checkout and Billing
-
-Users can enter delivery information, select a payment method, and place an order. The system generates a printable receipt.
-
-Data Storage
-
-Cart and user information are stored using browser LocalStorage.
-
-Project Type
-
-Frontend Web Application
+---
 
